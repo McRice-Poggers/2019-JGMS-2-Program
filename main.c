@@ -2,11 +2,12 @@
 int rm=0;
 int lm=3;
 int claw=1;
-int arm=4;
+int arm=0;
 int back=3;
 int claw_close=700;
-int back_close=200;
-int claw_up=589; 
+int arm_up=915; 
+int back_down=1112;
+int back_up=111;
 void counter(int dis);
 void starting_position();
 int main()
@@ -45,7 +46,10 @@ int main()
 //starting positions
 void starting_position()
 {
-    set_servo_position(claw,claw_up);
+    set_servo_position(arm,arm_up);
+    msleep(400);
+    
+    set_servo_position(back,back_up);
     msleep(400);
 }
 // certain distance in ticks/cm
