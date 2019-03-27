@@ -35,7 +35,7 @@ int main()
     bmd(rm);
     bmd(lm);
     
-    
+    //go foward till black
     
     
     
