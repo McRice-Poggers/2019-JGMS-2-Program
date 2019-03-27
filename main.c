@@ -24,7 +24,7 @@ int main()
     bmd(lm);
     
     //grab water reclamation unit
-    set_servo_position(back,back_close);
+    set_servo_position(back,back_down);
     msleep(400);
     
     
