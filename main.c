@@ -37,7 +37,13 @@ int main()
     bmd(lm);
     
     //go foward till black
-    
+    while(analog(0)>3000)
+    {
+        mrp(rm,1000,1300);
+        mrp(lm,1000,1300);
+    }
+    bmd(rm);
+    bmd(lm);
     
     
     disable_servos();
